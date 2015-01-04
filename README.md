@@ -2,11 +2,13 @@
 
 ## Description
 
-Ce feed correspond à la collection de paquetage utilisés dans Polaris Firmware.
+Ce feed correspond à la collection de paquets utilisés dans Polaris Firmware.
 
 ## Usage
 
-Ce feed ainsi que toute les définitions de chaque paquet sont installés par défaut dans Polaris Firmware. En revanche il n'est pas présent dans openwrt et il est nécessaire d'ajouter la ligne suivante dans feed.conf.default.
+Les paquets de ce feed sont installés par défaut dans Polaris Firmware. 
+
+En revanche, pour une utilisation dans Openwrt il est nécessaire d'ajouter dans feed.conf.default la ligne suivante.
 
 src-git polaris https://github.com/ffw-project/polaris-package.git
 
@@ -14,3 +16,5 @@ Ensuite, pour installer toutes les définitions des paquetages dans openwrt, ex�
 
 ./scripts/feeds update polaris
 ./scripts/feeds install -a -p polaris
+
+Les paquets sont désormais présents dans le menuconfig.
