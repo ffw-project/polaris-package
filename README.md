@@ -10,11 +10,11 @@ Les paquets de ce feed sont installés par défaut dans Polaris Firmware.
 
 En revanche, pour une utilisation dans Openwrt il est nécessaire d'ajouter dans feed.conf.default la ligne suivante.
 
-src-git polaris https://github.com/ffw-project/polaris-package.git
+  * src-git polaris https://github.com/ffw-project/polaris-package.git
 
-Ensuite, pour installer toutes les définitions des paquetages dans openwrt, exécuter:
+Ensuite, pour installer toutes les définitions des paquets dans openwrt, exécuter:
 
-./scripts/feeds update polaris
-./scripts/feeds install -a -p polaris
+  * ./scripts/feeds update polaris
+  * ./scripts/feeds install -a -p polaris
 
 Les paquets sont désormais présents dans le menuconfig.
